@@ -1,9 +1,8 @@
-
 import React from 'react';
 
 const SectionCareImagination: React.FC = () => {
   return (
-    <section id="imagination" className="py-32 bg-[#faf9f6]">
+    <section id="imagination" className="pt-8 pb-8 bg-[#faf9f6]">
       <div className="max-w-4xl mx-auto px-6">
         <div className="bg-white p-12 md:p-20 shadow-sm rounded-sm">
           <div className="text-center mb-12">

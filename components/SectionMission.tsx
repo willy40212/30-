@@ -1,9 +1,8 @@
-
 import React from 'react';
 
 const SectionMission: React.FC = () => {
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
+    <section className="pt-24 pb-8 bg-white relative overflow-hidden">
       <div className="max-w-3xl mx-auto px-6 text-center">
         <div className="mb-12">
           <span className="text-[#c29967] text-xs font-bold tracking-[0.5em] uppercase block mb-4">Our Vision</span>

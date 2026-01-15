@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const SectionResourceGuide: React.FC = () => {
@@ -31,7 +30,7 @@ const SectionResourceGuide: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 bg-[#faf9f6]">
+    <section className="pt-8 pb-24 bg-[#faf9f6]">
       <div className="max-w-6xl mx-auto px-6">
         <div className="mb-16">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-stone-200 pb-8">
