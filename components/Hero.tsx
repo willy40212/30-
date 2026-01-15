@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
       </div>
 
       <div className="max-w-4xl relative z-10 text-center px-6 pt-12">
-        <div className="mb-8 inline-block animate-fade-in">
+        <div className="mb-8 inline-block">
           <span className="inline-block text-stone-700 tracking-[0.5em] text-xs md:text-sm font-bold uppercase border-b-2 border-[#c29967] pb-2">
             紀錄片《30》映後限定導讀
           </span>
@@ -36,7 +36,7 @@ const Hero: React.FC = () => {
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
           <a 
             href="#trip" 
-            className="btn-gold px-12 py-5 rounded-sm text-base font-bold shadow-[0_15px_30px_rgba(194,153,103,0.3)] hover:scale-105 hover:shadow-xl transition-all duration-300"
+            className="btn-gold px-12 py-5 rounded-sm text-base font-bold shadow-[0_15px_30px_rgba(194,153,103,0.3)] hover:scale-105 transition-all duration-300"
           >
             神戶生活實驗旅行
           </a>
