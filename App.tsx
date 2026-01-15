@@ -5,6 +5,7 @@ import SectionMission from './components/SectionMission';
 import SectionDocumentary from './components/SectionDocumentary';
 import SectionCareImagination from './components/SectionCareImagination';
 import SectionCareResources from './components/SectionCareResources';
+import SectionResourceGuide from './components/SectionResourceGuide';
 import SectionCareScenarios from './components/SectionCareScenarios';
 import SectionJapanTrip from './components/SectionJapanTrip';
 import Footer from './components/Footer';
@@ -18,6 +19,7 @@ const App: React.FC = () => {
         <SectionDocumentary />
         <SectionMission />
         <SectionCareImagination />
+        <SectionResourceGuide />
         <SectionCareResources />
         <SectionCareScenarios />
         <SectionJapanTrip />
