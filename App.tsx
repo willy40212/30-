@@ -1,8 +1,8 @@
-
 import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import SectionMission from './components/SectionMission';
+import SectionDocumentary from './components/SectionDocumentary';
 import SectionCareImagination from './components/SectionCareImagination';
 import SectionCareResources from './components/SectionCareResources';
 import SectionCareScenarios from './components/SectionCareScenarios';
@@ -11,10 +11,11 @@ import Footer from './components/Footer';
 
 const App: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-[#faf9f6]">
       <Header />
       <main className="flex-grow">
         <Hero />
+        <SectionDocumentary />
         <SectionMission />
         <SectionCareImagination />
         <SectionCareResources />
