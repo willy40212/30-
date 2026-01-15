@@ -1,28 +1,45 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { LanguageContext } from '../App';
 
 const SectionDocumentary: React.FC = () => {
+  const { lang } = useContext(LanguageContext);
+
+  const t = {
+    zh: {
+      label: "The Documentary",
+      title: "關於《30》さんまる\n一場跨越圍牆的生活實驗",
+      p1: "「30」不僅是一個數字，它是神戶『はっぴーの家』的生活核心。在那個地方，老人、小孩、鄰居，甚至是外來者，都共享著一段無邊界的時光。",
+      p2: "如果您剛看完這部紀錄片，或許心中正湧動著某種暖意，或是對未來產生了新的疑問。這個網站是我們為您準備的後續指引。",
+      quote: "「這不只是關於長照，而是關於我們想如何活著。」",
+      caption: "神戶『はっぴーの家』實景紀錄"
+    },
+    jp: {
+      label: "ドキュメンタリー",
+      title: "『30』さんまるについて\n垣根を越えた生活実験",
+      p1: "「30」は単なる数字ではありません。それは神戸『はっぴーの家』の生活の核心です。そこでは、お年寄り、子供、隣人、さらには部外者までもが境界のない時間を共有しています。",
+      p2: "このドキュメンタリーを見た後、心に温かいものを感じたり、未来への新たな問いが生まれたりしたかもしれません。このサイトは、その後のガイドとして用意されました。",
+      quote: "「これは単なる介護の話ではなく、私たちがどう生きたいかの物語です。」",
+      caption: "神戸『はっぴーの家』実景記録"
+    }
+  };
+
   return (
     <section id="documentary" className="py-24 bg-white border-y border-stone-100">
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center gap-16">
           <div className="flex-1">
             <div className="mb-6">
-              <span className="text-[#c29967] text-xs font-bold tracking-[0.4em] uppercase block mb-2">The Documentary</span>
-              <h2 className="serif text-4xl text-stone-900 leading-tight">
-                關於《30》さんまる<br />
-                一場跨越圍牆的生活實驗
+              <span className="text-[#c29967] text-xs font-bold tracking-[0.4em] uppercase block mb-2">{t[lang].label}</span>
+              <h2 className="serif text-4xl text-stone-900 leading-tight whitespace-pre-line">
+                {t[lang].title}
               </h2>
             </div>
             <div className="space-y-6 text-stone-600 leading-relaxed text-lg">
-              <p>
-                「30」不僅是一個數字，它是神戶『はっぴーの家』的生活核心。在那個地方，老人、小孩、鄰居，甚至是外來者，都共享著一段無邊界的時光。
-              </p>
-              <p>
-                如果您剛看完這部紀錄片，或許心中正湧動著某種暖意，或是對未來產生了新的疑問。這個網站是我們為您準備的後續指引。
-              </p>
+              <p>{t[lang].p1}</p>
+              <p>{t[lang].p2}</p>
               <div className="pt-6">
-                <blockquote className="border-l-4 border-[#c29967] pl-6 italic text-stone-500 serif">
-                  「這不只是關於長照，而是關於我們想如何活著。」
+                <blockquote className="border-l-4 border-[#c29967] pl-6 italic text-stone-500 serif text-xl">
+                  {t[lang].quote}
                 </blockquote>
               </div>
             </div>
@@ -44,7 +61,7 @@ const SectionDocumentary: React.FC = () => {
               </div>
             </div>
             <p className="mt-4 text-xs text-stone-400 text-center tracking-widest uppercase">
-              神戶『はっぴーの家』實景紀錄
+              {t[lang].caption}
             </p>
           </div>
         </div>
